@@ -1,6 +1,6 @@
 # A Dockerfile that sets up a full Gym install
 FROM ubuntu:16.04
-
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update \
     && apt-get install -y libav-tools \
     python-setuptools \
